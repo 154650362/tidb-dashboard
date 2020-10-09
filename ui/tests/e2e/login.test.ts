@@ -38,7 +38,7 @@ describe('Login', () => {
       await page.goto(LOGIN_URL)
 
       const title = await page.title()
-      expect(title).toBe('TiDB Dashboard')
+      expect(title).toBe('YiDB Dashboard')
 
       const loginBtn = await page.waitForSelector('button#signin_btn')
       await Promise.all([page.waitForNavigation(), loginBtn.click()])
